@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF6AD4CB-3787-4171-9559-E31F4546DF8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>ProyectoInterfaces</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProyectoInterfaces.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProyectoInterfaces.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>drivers\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup">
+      <HintPath>drivers\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borTienda.Designer.vb">
+      <DependentUpon>borTienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="borTienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borCaracteristica.Designer.vb">
+      <DependentUpon>borCaracteristica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="borCaracteristica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borCategoria.Designer.vb">
+      <DependentUpon>borCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="borCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borProducto.Designer.vb">
+      <DependentUpon>borProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="borProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListProductoPorCate.Designer.vb">
+      <DependentUpon>ListProductoPorCate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListProductoPorCate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListProductos.Designer.vb">
+      <DependentUpon>ListProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listTiendas.Designer.vb">
+      <DependentUpon>listTiendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listTiendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modCaracteristica.Designer.vb">
+      <DependentUpon>modCaracteristica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modCaracteristica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modCategoria.Designer.vb">
+      <DependentUpon>modCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modProducto.Designer.vb">
+      <DependentUpon>modProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modTienda.Designer.vb">
+      <DependentUpon>modTienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modTienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insCaracteristica.Designer.vb">
+      <DependentUpon>insCaracteristica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="insCaracteristica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insCategoria.Designer.vb">
+      <DependentUpon>insCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="insCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insProducto.Designer.vb">
+      <DependentUpon>insProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="insProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insTienda.Designer.vb">
+      <DependentUpon>insTienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="insTienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borTienda.resx">
+      <DependentUpon>borTienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borCaracteristica.resx">
+      <DependentUpon>borCaracteristica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borCategoria.resx">
+      <DependentUpon>borCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borProducto.resx">
+      <DependentUpon>borProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListProductoPorCate.resx">
+      <DependentUpon>ListProductoPorCate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListProductos.resx">
+      <DependentUpon>ListProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listTiendas.resx">
+      <DependentUpon>listTiendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modCaracteristica.resx">
+      <DependentUpon>modCaracteristica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modCategoria.resx">
+      <DependentUpon>modCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modProducto.resx">
+      <DependentUpon>modProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modTienda.resx">
+      <DependentUpon>modTienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insCaracteristica.resx">
+      <DependentUpon>insCaracteristica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insCategoria.resx">
+      <DependentUpon>insCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insProducto.resx">
+      <DependentUpon>insProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insTienda.resx">
+      <DependentUpon>insTienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
