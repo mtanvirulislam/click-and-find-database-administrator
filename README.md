@@ -1,1 +1,1 @@
-# click-and-find-database-administrator
+# Click & Find database administrator
